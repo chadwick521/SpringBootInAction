@@ -7,9 +7,9 @@
         actual jars). Run with '$ java -jar target/*.jar'.
     </description>
 
-    <property name="spring-boot.version" value="1.5.6.BUILD-SNAPSHOT" />
+    <property name="spring-boot.version" value="2.0.0.BUILD-SNAPSHOT" />
     <property name="lib.dir" location="${basedir}/target/lib" />
-    <property name="start-class" value="sample.ant.SampleAntApplication" />
+    <property name="start-class" value="com.hts.htstask.HtsTaskApplication" />
 
     <target name="resolve" description="--> retrieve dependencies with ivy">
         <ivy:retrieve pattern="${lib.dir}/[conf]/[artifact]-[type]-[revision].[ext]" />
