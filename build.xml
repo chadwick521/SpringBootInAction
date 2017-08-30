@@ -1,7 +1,7 @@
 <project
         xmlns:ivy="antlib:org.apache.ivy.ant"
         xmlns:spring-boot="antlib:org.springframework.boot.ant"
-        name="spring-boot-sample-ant"
+        name="hts-task"
         default="build">
 
     <description>
