@@ -1,7 +1,7 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
 push.sh
-
+ivy-2.3.0.jar
 ### STS ###
 .apt_generated
 .classpath
