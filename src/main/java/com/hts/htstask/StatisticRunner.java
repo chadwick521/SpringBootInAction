@@ -34,7 +34,7 @@ public class StatisticRunner {
     }
 
     /**
-     * 每隔5秒运行
+     * 每隔15秒运行
      */
     @Scheduled(fixedRate = 15000)
     public void runTask() {
@@ -42,11 +42,11 @@ public class StatisticRunner {
     }
 
     /**
-     * 每天17:46运行
+     * 每天18:11运行
      */
-    @Scheduled(cron = "00 46 17 * * ?")
+    @Scheduled(cron = "00 11 18 * * ?")
     public void runTask2() {
-        LOG.warning("Execute in every 17:35!");
+        LOG.warning("Execute in every 18:11!");
     }
 
 }
