@@ -10,11 +10,7 @@
         <dependency org="org.springframework.boot" name="spring-boot-starter-web" rev="${spring-boot.version}" conf="compile"/>
         <dependency org="org.springframework.boot" name="spring-boot-loader" rev="${spring-boot.version}" conf="loader->default" />
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
-        <dependency org="org.springframework.boot" name="spring-boot-starter-actuator" rev="${spring-boot.version}" conf="loader->default" />
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
-        <dependency org="org.springframework.boot" name="spring-boot-starter-security" rev="${spring-boot.version}" conf="loader->default" />
+        <dependency org="external" name="spring-boot-jars" rev="1.0" conf="dev->default" />
 
         <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
         <dependency org="com.googlecode.json-simple" name="json-simple" rev="1.1.1" />
