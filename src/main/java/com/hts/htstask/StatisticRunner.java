@@ -42,9 +42,9 @@ public class StatisticRunner {
     }
 
     /**
-     * 每天17:35运行
+     * 每天17:46运行
      */
-    @Scheduled(cron = "00 41 17 * * ?")
+    @Scheduled(cron = "00 46 17 * * ?")
     public void runTask2() {
         LOG.warning("Execute in every 17:35!");
     }
