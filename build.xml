@@ -38,7 +38,7 @@
     </target>
 
     <target name="build" depends="compile">
-        <spring-boot:exejar destfile="target/${ant.project.name}-${spring-boot.version}.jar" classes="target/classes">
+        <spring-boot:exejar destfile="target/${ant.project.name}.jar" classes="target/classes">
             <spring-boot:lib>
                 <fileset dir="${lib.dir}/runtime" />
             </spring-boot:lib>
@@ -46,7 +46,7 @@
     </target>
     <!-- Manual equivalent of the build target -->
     <target name="manual" depends="compile">
-        <jar destfile="target/${ant.project.name}-${spring-boot.version}.jar" compress="false">
+        <jar destfile="target/${ant.project.name}.jar" compress="false">
             <mappedresources>
                 <fileset dir="target/classes" />
                 <globmapper from="*" to="BOOT-INF/classes/*"/>
