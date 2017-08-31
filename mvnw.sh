@@ -1,38 +1,10 @@
 #!/bin/sh
-# ----------------------------------------------------------------------------
-# Licensed to the Apache Software Foundation (ASF) under one
-# or more contributor license agreements.  See the NOTICE file
-# distributed with this work for additional information
-# regarding copyright ownership.  The ASF licenses this file
-# to you under the Apache License, Version 2.0 (the
-# "License"); you may not use this file except in compliance
-# with the License.  You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing,
-# software distributed under the License is distributed on an
-# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-# KIND, either express or implied.  See the License for the
-# specific language governing permissions and limitations
-# under the License.
-# ----------------------------------------------------------------------------
 
-# ----------------------------------------------------------------------------
-# Maven2 Start Up Batch script
-#
-# Required ENV vars:
-# ------------------
-#   JAVA_HOME - location of a JDK home dir
-#
-# Optional ENV vars
-# -----------------
-#   M2_HOME - location of maven2's installed home dir
-#   MAVEN_OPTS - parameters passed to the Java VM when running Maven
-#     e.g. to debug Maven itself, use
-#       set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
-#   MAVEN_SKIP_RC - flag to disable loading of mavenrc files
-# ----------------------------------------------------------------------------
+JAVA_HOME=/usr/java/jdk1.8.0_60/
+export JAVA_HOME
+
+M3_HOME=/global/sww/apache-maven-3.0.3/
+export M3_HOME
 
 if [ -z "$MAVEN_SKIP_RC" ] ; then
 
@@ -72,7 +44,7 @@ if [ -z "$JAVA_HOME" ] ; then
   fi
 fi
 
-if [ -z "$M2_HOME" ] ; then
+if [ -z "$M3_HOME" ] ; then
   ## resolve links - $0 may be a link to maven's home
   PRG="$0"
 
@@ -89,19 +61,19 @@ if [ -z "$M2_HOME" ] ; then
 
   saveddir=`pwd`
 
-  M2_HOME=`dirname "$PRG"`/..
+  M3_HOME=`dirname "$PRG"`/..
 
   # make it fully qualified
-  M2_HOME=`cd "$M2_HOME" && pwd`
+  M3_HOME=`cd "$M3_HOME" && pwd`
 
   cd "$saveddir"
-  # echo Using m2 at $M2_HOME
+  # echo Using m3 at $M3_HOME
 fi
 
 # For Cygwin, ensure paths are in UNIX format before anything is touched
 if $cygwin ; then
-  [ -n "$M2_HOME" ] &&
-    M2_HOME=`cygpath --unix "$M2_HOME"`
+  [ -n "$M3_HOME" ] &&
+    M3_HOME=`cygpath --unix "$M3_HOME"`
   [ -n "$JAVA_HOME" ] &&
     JAVA_HOME=`cygpath --unix "$JAVA_HOME"`
   [ -n "$CLASSPATH" ] &&
@@ -110,8 +82,8 @@ fi
 
 # For Migwn, ensure paths are in UNIX format before anything is touched
 if $mingw ; then
-  [ -n "$M2_HOME" ] &&
-    M2_HOME="`(cd "$M2_HOME"; pwd)`"
+  [ -n "$M3_HOME" ] &&
+    M3_HOME="`(cd "$M3_HOME"; pwd)`"
   [ -n "$JAVA_HOME" ] &&
     JAVA_HOME="`(cd "$JAVA_HOME"; pwd)`"
   # TODO classpath?
@@ -206,8 +178,8 @@ MAVEN_OPTS="$(concat_lines "$MAVEN_PROJECTBASEDIR/.mvn/jvm.config") $MAVEN_OPTS"
 
 # For Cygwin, switch paths to Windows format before running java
 if $cygwin; then
-  [ -n "$M2_HOME" ] &&
-    M2_HOME=`cygpath --path --windows "$M2_HOME"`
+  [ -n "$M3_HOME" ] &&
+    M3_HOME=`cygpath --path --windows "$M3_HOME"`
   [ -n "$JAVA_HOME" ] &&
     JAVA_HOME=`cygpath --path --windows "$JAVA_HOME"`
   [ -n "$CLASSPATH" ] &&
@@ -221,5 +193,5 @@ WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain
 exec "$JAVACMD" \
   $MAVEN_OPTS \
   -classpath "$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.jar" \
-  "-Dmaven.home=${M2_HOME}" "-Dmaven.multiModuleProjectDirectory=${MAVEN_PROJECTBASEDIR}" \
+  "-Dmaven.home=${M3_HOME}" "-Dmaven.multiModuleProjectDirectory=${MAVEN_PROJECTBASEDIR}" \
   ${WRAPPER_LAUNCHER} $MAVEN_CONFIG "$@"
