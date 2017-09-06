@@ -1,4 +1,4 @@
-package com.hts.htstask;
+package com.zhaoyh.mainStarter;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

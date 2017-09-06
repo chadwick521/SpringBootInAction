@@ -1,4 +1,4 @@
-package com.hts.htstask;
+package com.zhaoyh.mainStarter;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

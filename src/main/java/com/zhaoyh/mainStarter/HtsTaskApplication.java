@@ -1,6 +1,6 @@
-package com.hts.htstask;
+package com.zhaoyh.mainStarter;
 
-import com.hts.utils.TestBean;
+import com.zhaoyh.utils.TestBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-@ComponentScan(basePackages = "com.hts.utils")
+@ComponentScan(basePackages = "com.zhaoyh.utils")
 public class HtsTaskApplication {
 
 	/**

@@ -1,4 +1,4 @@
-package com.hts.utils;
+package com.zhaoyh.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;

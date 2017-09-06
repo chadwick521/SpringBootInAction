@@ -1,4 +1,4 @@
-package com.hts.utils;
+package com.zhaoyh.utils;
 
 /**
  * Created by zhaoyh on 2017/9/4.

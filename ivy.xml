@@ -2,7 +2,7 @@
 <ivy-module version="2.0">
 
     <info organisation="org.springframework.boot" module="spring-boot-sample-ant" />
-    <!--<info organisation="outfox" module="hts-task" />-->
+    <!--<info organisation="outfox" module="zhaoyh-task" />-->
 
     <configurations>
         <conf name="compile" description="everything needed to compile this module" />
